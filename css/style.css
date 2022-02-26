@@ -835,7 +835,7 @@ a {
   position: fixed;
   top: 0;
   right: 0;
-  width: 30rem;
+  width: 28rem;
   z-index: 12;
   height: 100%;
   background-color: #1a3775;
@@ -871,8 +871,11 @@ a {
   font-size: 1.8rem;
 }
 
-.mobile-show {
+.search-bar-menu {
   display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 3.5rem;
 }
 
 .main-menu-sidebar .input-search > input {
@@ -886,10 +889,6 @@ a {
 
 .main-menu-sidebar .input-search > input::placeholder {
   color: #ffffff;
-}
-
-.main-menu-sidebar .search-bar {
-  margin-top: 3.5rem;
 }
 
 .main-menu-sidebar .search-title {
