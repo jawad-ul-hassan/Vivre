@@ -817,7 +817,6 @@ a {
 
 .footer-text-cp > p {
   font-size: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .page-links {
@@ -826,7 +825,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1.5rem;
+}
+
+.page-links > a {
+  margin-right: 2.5rem;
 }
 
 /* Hamburger Menu */
