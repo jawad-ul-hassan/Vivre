@@ -574,12 +574,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 0;
 }
 
 .comprendre-item-content {
   width: 70%;
   margin: 0 auto;
+  padding: 5rem 0;
 }
 
 .comprendre-title {
