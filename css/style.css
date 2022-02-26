@@ -94,6 +94,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex: 1;
+  gap: 2.5rem;
 }
 
 .nav-menu {
@@ -290,6 +291,7 @@ a {
 
 .region-item {
   padding-left: 3.5rem;
+  padding-right: 0.5rem;
   border-left: 2px solid #1a3775;
 }
 
@@ -338,6 +340,7 @@ a {
 .planifier-item-content {
   width: 80%;
   margin: 0 auto;
+  padding: 5rem 0;
 }
 
 .planifier-title {
@@ -391,6 +394,7 @@ a {
 .planifier-image > img {
   display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -412,6 +416,7 @@ a {
 .decouvirer-item-content {
   width: 50%;
   margin: 0 auto;
+  padding: 5rem 0;
 }
 
 .decouvirer-title {
@@ -456,6 +461,7 @@ a {
 .decouvirer-image > img {
   display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -568,6 +574,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 5rem 0;
 }
 
 .comprendre-item-content {
@@ -627,6 +634,7 @@ a {
 .comprendre-image > img {
   display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -763,6 +771,7 @@ a {
 .footer-nav {
   margin-top: 20rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 1.5rem;
   padding-bottom: 3.5rem;
@@ -796,19 +805,329 @@ a {
 .footer-text {
   border-top: 3px solid #1a3775;
   padding-top: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
 }
 
-.footer-text > p {
+.footer-text-item {
+  margin-right: 5rem;
+}
+
+.footer-text-cp > p {
   font-size: 1.5rem;
-  text-align: center;
-  padding-bottom: 0.85rem;
+  padding-bottom: 1.5rem;
 }
 
 .page-links {
   font-size: 1.5rem;
   text-align: center;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 3.5rem;
+  gap: 1.5rem;
+}
+
+/* Hamburger Menu */
+
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30rem;
+  z-index: 12;
+  height: 100%;
+  background-color: #1a3775;
+  color: #fff;
+  right: -35rem;
+  transition: 300ms ease-in;
+  padding: 1.5rem 2.5rem;
+  visibility: hidden;
+}
+
+.sidebar-menu.active {
+  right: 0;
+  visibility: visible;
+}
+
+.sidebar-header {
+  text-align: right;
+  padding: 1.5rem 0;
+}
+
+.sidebar-header > i {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.main-menu-sidebar {
+  margin-top: 3.5rem;
+}
+
+.main-menu-sidebar .nav-links {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.mobile-show {
+  display: flex;
+}
+
+.main-menu-sidebar .input-search > input {
+  height: 6rem;
+  border: 1px solid #ffffff;
+  border-radius: 5rem;
+  padding-left: 2.5rem;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.main-menu-sidebar .input-search > input::placeholder {
+  color: #ffffff;
+}
+
+.main-menu-sidebar .search-bar {
+  margin-top: 3.5rem;
+}
+
+.main-menu-sidebar .search-title {
+  left: 2.5rem;
+}
+
+/* Responsive Styles Media Queries */
+
+@media (max-width: 992px) {
+  .hero-images .hero-circle-1 {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .hero-images .hero-circle-2 {
+    width: 30rem;
+    height: 30rem;
+    top: 10rem;
+    right: 0rem;
+  }
+
+  .hero-item {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .hero-description {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .decouvirer-item {
+    width: 45%;
+  }
+
+  .decouvirer-image {
+    width: 55%;
+  }
+}
+
+@media (max-width: 925px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .main-menu {
+    justify-content: flex-end;
+    gap: 1.5rem;
+  }
+
+  .region-box {
+    padding-right: 1.5rem;
+  }
+
+  .region-item:nth-child(1) {
+    border-left: 0;
+    padding-left: 1.5rem;
+  }
+
+  .recommendation-content-flex {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .recommendation-item {
+    width: 100%;
+  }
+
+  .articles-cards {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .region-box-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .footer-banner-ent-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 835px) {
+  .hero-images {
+    display: none;
+  }
+
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero {
+    margin-top: 2.5rem;
+  }
+
+  .sp-text {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-banner-item {
+    width: 45%;
+    padding: 2.5rem;
+  }
+
+  .footer-banner-ent {
+    width: 55%;
+  }
+}
+
+@media (max-width: 767px) {
+  .region-main-flex {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .region-title,
+  .region-description {
+    width: 100%;
+  }
+
+  .region-box {
+    border: 1px solid #1a3775;
+    border-radius: 1.5rem;
+    padding: 1.5rem 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .region-item {
+    padding-right: 2.5rem;
+    padding-left: 0;
+    border-left: 0;
+    width: 100%;
+  }
+
+  .region-item:nth-child(1) {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .comprendre-content {
+    flex-wrap: wrap;
+  }
+
+  .comprendre-image,
+  .comprendre-item {
+    width: 100%;
+  }
+
+  .decouvirer-content {
+    flex-wrap: wrap;
+  }
+
+  .decouvirer-image,
+  .decouvirer-item {
+    width: 100%;
+  }
+
+  .decouvirer-image {
+    order: 2;
+  }
+
+  .planifier-content {
+    flex-wrap: wrap;
+  }
+
+  .planifier-image,
+  .planifier-item {
+    width: 100%;
+  }
+
+  .articles-cards {
+    flex-wrap: wrap;
+  }
+
+  .articles-card {
+    width: 100%;
+  }
+
+  .footer-banner-flex {
+    flex-wrap: wrap;
+  }
+
+  .footer-banner-item {
+    width: 100%;
+  }
+
+  .footer-banner-ent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .recommendation-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  .recommendation-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .search-bar {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 0;
+  }
+
+  .planifier-item-content,
+  .decouvirer-item-content,
+  .comprendre-item-content {
+    width: 100%;
+    padding: 5rem 1.5rem;
+  }
+
+  .footer-menu {
+    width: 100%;
+  }
 }

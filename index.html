@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome Link -->
     <script
       src="https://kit.fontawesome.com/6255250c8f.js"
@@ -39,7 +39,7 @@
                   <span class="search-title">Assistance</span>
                 </div>
               </div>
-              <div class="hamburger-icon">
+              <div id="hamburger-menu" class="hamburger-icon">
                 <i class="fas fa-bars"></i>
               </div>
             </div>
@@ -76,6 +76,35 @@
         </section>
       </div>
     </header>
+
+    <!-- Mobile-Menu -->
+
+    <div class="sidebar-menu active">
+      <div class="sidebar-header">
+        <i id="close-menu" class="fas fa-times"></i>
+      </div>
+      <div class="main-menu-sidebar">
+        <div class="nav-menu-sidebar">
+          <a href="#" class="nav-links">Planifier</a>
+          <a href="#" class="nav-links">Découvrir</a>
+          <a href="#" class="nav-links">Comprende</a>
+          <a href="#" class="nav-links">Entreprende</a>
+        </div>
+
+        <div class="search-bar mobile-show">
+          <i class="fas fa-search"></i>
+          <div class="input-search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Agents de voyage"
+            />
+            <span class="search-title">Assistance</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Main -->
     <main class="main">
@@ -340,17 +369,36 @@
         </nav>
 
         <div class="footer-text">
-          <p>&copy; Condidentialite</p>
-          <div class="page-links">
-            <a href="#">Conditions d'utilisation</a>
-            <a href="#">Condidentialite</a>
-            <a href="#">Plan de site</a>
+          <div class="footer-text-item">
+            <a href="#" class="logo">Logo</a>
+          </div>
+          <div class="footer-text-cp">
+            <p>&copy; Condidentialite</p>
+            <div class="page-links">
+              <a href="#">Conditions d'utilisation</a>
+              <a href="#">Condidentialite</a>
+              <a href="#">Plan de site</a>
+            </div>
           </div>
         </div>
       </div>
     </footer>
 
     <!-- Script -->
-    <script src="./script/app.js"></script>
+    <script>
+      // Hamburger-Menu
+
+      const mobileMenu = document.querySelector('#hamburger-menu');
+      const closeMenu = document.querySelector('#close-menu');
+      const sideMenu = document.querySelector('.sidebar-menu');
+
+      mobileMenu.addEventListener('click', () => {
+        sideMenu.classList.add('active');
+      });
+
+      closeMenu.addEventListener('click', () => {
+        sideMenu.classList.remove('active');
+      });
+    </script>
   </body>
 </html>
