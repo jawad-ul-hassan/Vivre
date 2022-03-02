@@ -1,0 +1,346 @@
+/* Header */
+.header {
+  background-color: #fff;
+}
+
+/* Region-Section */
+.region {
+  padding: 2.5rem 0;
+}
+
+.region-box {
+  margin-top: 0;
+}
+
+/* Area-Card */
+.area-card {
+  margin: 2.5rem 0;
+  padding-bottom: 20rem;
+  background-color: #dfdfdf;
+}
+
+.area-card-filter {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.area-card-filter-types {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.filter-type {
+  display: block;
+  font-family: inherit;
+  padding: 1.12rem 1.8rem;
+  background-color: #ffffff;
+  border-radius: 2.5rem;
+  border: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #1a3775;
+  cursor: pointer;
+}
+
+.filter-type > i {
+  padding-left: 1.5rem;
+  font-size: 1.8rem;
+  vertical-align: middle;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.filter-icon-box {
+  padding: 0.5rem;
+  border-radius: 5rem;
+  border: 1px solid #1a3775;
+}
+
+.bars-icon {
+  display: inline-block;
+  width: 2.8rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  text-align: center;
+  background-color: #1a3775;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.gray-col {
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.filter-icon-box > i {
+  font-size: 1.5rem;
+  padding-right: 0.25rem;
+}
+
+/* Dropdown-Code-Autres */
+
+#autres-filters-wrapper {
+  position: relative;
+}
+
+.dropdown-autres {
+  padding: 1.5rem;
+  border: 2px solid #1a3775;
+  border-radius: 1.5rem;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25rem;
+  background-color: #ffffff;
+  display: none;
+  z-index: 10;
+}
+
+.dropdown-autres.active {
+  display: block;
+}
+
+.checkbox-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.checkbox-control label {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.checkbox-control input {
+  width: 1.6rem;
+  height: 1.6rem;
+  accent-color: #1a3775;
+}
+
+/* Cards-Styling With Slider */
+.area-card-content {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.area-card-slider {
+  width: 35%;
+}
+
+.area-card-description {
+  flex: 1;
+  padding: 3rem;
+  background-color: #ffffff;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.area-card-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.area-card-header > img {
+  display: block;
+  width: 7.5rem;
+  height: 7.5rem;
+  padding: 1rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1a3775;
+}
+
+.area-card-title {
+  font-size: 2.2rem;
+  color: #f88e2b;
+}
+
+.area-card-subtitle {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #1a3775;
+}
+
+.area-card-body {
+  margin-top: 2.5rem;
+}
+
+.area-card-body p {
+  font-size: 1.8rem;
+}
+
+.area-card-footer {
+  margin-top: 6.5rem;
+}
+
+.area-card-footer-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.dot {
+  font-size: 2.2rem;
+}
+
+.rating > i {
+  color: #f88e2b;
+  padding-right: 0.5rem;
+}
+
+.area-card .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.area-card .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.area-card .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.area-card .swiper-button-next,
+.area-card .swiper-button-prev {
+  width: calc(var(--swiper-navigation-size) / 44 * 40);
+}
+
+.area-card .swiper-button-next:after,
+.area-card .swiper-button-prev:after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f105';
+  font-size: 2.4rem;
+  font-weight: 900;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  line-height: 4rem;
+  text-align: center;
+  background-color: #ffffff;
+  color: #1a3775;
+}
+
+.area-card .swiper-button-prev:after {
+  content: '\f104';
+}
+
+.btn-card {
+  display: block;
+  width: 21rem;
+  text-align: left;
+  padding: 1rem 0;
+  padding-left: 2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 400;
+  background-color: #00c1de;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5rem;
+  cursor: pointer;
+  margin: 3.5rem auto;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 13rem;
+  background-color: #fff;
+}
+
+/* Responsive Styles Media Queries */
+
+@media (max-width: 992px) {
+  .area-card-description {
+    padding: 2rem;
+  }
+
+  .area-card-body p {
+    font-size: 1.6rem;
+  }
+
+  .area-card-footer-content {
+    gap: 1rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .area-card-description {
+    width: 100%;
+  }
+
+  .area-card-content {
+    flex-direction: column;
+  }
+
+  .area-card-slider {
+    width: 100%;
+  }
+
+  .area-card-footer-content {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .dropdown-autres {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .filter-type {
+    width: 25rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .categories {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .area-card-header > img {
+    width: 6.5rem;
+    height: 6.5rem;
+    padding: 0.5rem;
+    border: 2px solid #1a3775;
+  }
+
+  .area-card-subtitle {
+    font-size: 3rem;
+  }
+}

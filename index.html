@@ -18,7 +18,9 @@
     <header class="header">
       <div class="main-container">
         <nav class="navbar">
-          <a href="#" class="logo">Logo</a>
+          <a href="#" class="logo"
+            ><img src="./assets/images/logo-placeholder.png" alt="Logo"
+          /></a>
           <div class="main-menu">
             <div class="nav-menu">
               <a href="#planifier" class="nav-links">Planifier</a>
@@ -370,7 +372,9 @@
 
         <div class="footer-text">
           <div class="footer-text-item">
-            <a href="#" class="logo">Logo</a>
+            <a href="#" class="logo"
+              ><img src="./assets/images/logo-placeholder.png" alt="Logo"
+            /></a>
           </div>
           <div class="footer-text-cp">
             <p>&copy; Condidentialite</p>
@@ -385,20 +389,6 @@
     </footer>
 
     <!-- Script -->
-    <script>
-      // Hamburger-Menu
-
-      const mobileMenu = document.querySelector('#hamburger-menu');
-      const closeMenu = document.querySelector('#close-menu');
-      const sideMenu = document.querySelector('.sidebar-menu');
-
-      mobileMenu.addEventListener('click', () => {
-        sideMenu.classList.add('active');
-      });
-
-      closeMenu.addEventListener('click', () => {
-        sideMenu.classList.remove('active');
-      });
-    </script>
+    <script src="./script/app.js"></script>
   </body>
 </html>

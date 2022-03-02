@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/6255250c8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/collection.css" />
+    <title>Vivre</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="main-container">
+        <nav class="navbar">
+          <a href="#" class="logo"
+            ><img src="./assets/images/logo-placeholder.png" alt="Logo"
+          /></a>
+          <div class="main-menu">
+            <div class="nav-menu">
+              <a href="#planifier" class="nav-links">Planifier</a>
+              <a href="#decouvirer" class="nav-links">Découvrir</a>
+              <a href="#comprendre" class="nav-links">Comprende</a>
+              <a href="#entreprende" class="nav-links">Entreprende</a>
+            </div>
+            <div class="nav-icons">
+              <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <div class="input-search">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    placeholder="Agents de voyage"
+                  />
+                  <span class="search-title">Assistance</span>
+                </div>
+              </div>
+              <div id="hamburger-menu" class="hamburger-icon">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile-Menu -->
+
+    <div class="sidebar-menu">
+      <div class="sidebar-header">
+        <i id="close-menu" class="fas fa-times"></i>
+      </div>
+      <div class="main-menu-sidebar">
+        <div class="nav-menu-sidebar">
+          <a href="#planifier" class="nav-links">Planifier</a>
+          <a href="#decouvirer" class="nav-links">Découvrir</a>
+          <a href="#comprendre" class="nav-links">Comprende</a>
+          <a href="#entreprende" class="nav-links">Entreprende</a>
+        </div>
+
+        <div class="search-bar-menu">
+          <i class="fas fa-search"></i>
+          <div class="input-search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Agents de voyage"
+            />
+            <span class="search-title">Assistance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- Region-Section -->
+      <section class="region">
+        <div class="main-container">
+          <div class="region-content">
+            <div class="region-box">
+              <div class="region-box-flex">
+                <div class="region-item">
+                  <h3>Regions</h3>
+                  <p>Lorem ipsum dolor?</p>
+                </div>
+                <div class="region-item">
+                  <h3>Services/Experiences</h3>
+                  <p>Lorem ipsum dolor?</p>
+                </div>
+                <div class="region-item">
+                  <h3>Date</h3>
+                  <p>Lorem ipsum dolor?</p>
+                </div>
+                <div class="region-dropdown">
+                  Rechercher
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Area-Card -->
+      <section class="area-card">
+        <div class="main-container">
+          <div class="area-card-filter">
+            <div class="area-card-filter-types">
+              <button class="filter-type">
+                Tier <i class="fas fa-angle-down"></i>
+              </button>
+              <button class="filter-type">
+                Prix <i class="fas fa-angle-down"></i>
+              </button>
+              <button class="filter-type">
+                Evaluation <i class="fas fa-angle-down"></i>
+              </button>
+              <div id="autres-filters-wrapper">
+                <button class="filter-type" id="autres-filters">
+                  Autres filters <i class="fas fa-angle-down"></i>
+                </button>
+                <div class="dropdown-autres">
+                  <div class="checkbox-control">
+                    <label for="livraison">Livraison en ligne</label>
+                    <input type="checkbox" name="livraison" id="livraison" />
+                  </div>
+                  <div class="checkbox-control">
+                    <label for="boutique">Boutique en ligne</label>
+                    <input type="checkbox" name="boutique" id="boutique" />
+                  </div>
+                  <div class="checkbox-control">
+                    <label for="lorem">Lorem ipsum</label>
+                    <input type="checkbox" name="lorem" id="lorem" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="categories">
+              <p class="gray-col">999 enteries</p>
+              <div class="filter-icon-box">
+                <span class="bars-icon"><i class="fas fa-bars"></i></span>
+                <i class="fas fa-th-large"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="area-card-content">
+            <!-- Slider -->
+            <div class="area-card-slider">
+              <div class="swiper cardSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/images/card-area-1.jpeg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/card-area-2.jpeg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="area-card-description">
+              <div class="area-card-header">
+                <img
+                  src="./assets/images/mojito-logo.png"
+                  alt="Mojito"
+                  class="area-card-logo"
+                />
+                <div class="area-card-header-title">
+                  <p class="area-card-title">Havana</p>
+                  <h2 class="area-card-subtitle">Mojito Mojito</h2>
+                </div>
+              </div>
+              <div class="area-card-body">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, minima molestias suscipit nihil facilis quos
+                  officiis omnis hic ut rerum voluptates, ullam vitae placeat
+                  porro quasi earum eos aperiam necessitatibus quae accusamus.
+                </p>
+              </div>
+              <div class="area-card-footer">
+                <div class="area-card-footer-content">
+                  <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                  <span class="dot">&bull;</span>
+                  <span class="dollar-sign">$$$-$$$$</span>
+                  <span class="dot">&bull;</span>
+                  <span class="location"
+                    >Mots cles, latino-americain, Bar, Caribbean</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="area-card-content">
+            <!-- Slider -->
+            <div class="area-card-slider">
+              <div class="swiper cardSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/images/card-area-1.jpeg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/card-area-2.jpeg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="area-card-description">
+              <div class="area-card-header">
+                <img
+                  src="./assets/images/mojito-logo.png"
+                  alt="Mojito"
+                  class="area-card-logo"
+                />
+                <div class="area-card-header-title">
+                  <p class="area-card-title">Havana</p>
+                  <h2 class="area-card-subtitle">Mojito Mojito</h2>
+                </div>
+              </div>
+              <div class="area-card-body">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, minima molestias suscipit nihil facilis quos
+                  officiis omnis hic ut rerum voluptates, ullam vitae placeat
+                  porro quasi earum eos aperiam necessitatibus quae accusamus.
+                </p>
+              </div>
+              <div class="area-card-footer">
+                <div class="area-card-footer-content">
+                  <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                  <span class="dot">&bull;</span>
+                  <span class="dollar-sign">$$$-$$$$</span>
+                  <span class="dot">&bull;</span>
+                  <span class="location"
+                    >Mots cles, latino-americain, Bar, Caribbean</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="area-card-content">
+            <!-- Slider -->
+            <div class="area-card-slider">
+              <div class="swiper cardSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/images/card-area-1.jpeg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/card-area-2.jpeg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="area-card-description">
+              <div class="area-card-header">
+                <img
+                  src="./assets/images/mojito-logo.png"
+                  alt="Mojito"
+                  class="area-card-logo"
+                />
+                <div class="area-card-header-title">
+                  <p class="area-card-title">Havana</p>
+                  <h2 class="area-card-subtitle">Mojito Mojito</h2>
+                </div>
+              </div>
+              <div class="area-card-body">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, minima molestias suscipit nihil facilis quos
+                  officiis omnis hic ut rerum voluptates, ullam vitae placeat
+                  porro quasi earum eos aperiam necessitatibus quae accusamus.
+                </p>
+              </div>
+              <div class="area-card-footer">
+                <div class="area-card-footer-content">
+                  <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                  <span class="dot">&bull;</span>
+                  <span class="dollar-sign">$$$-$$$$</span>
+                  <span class="dot">&bull;</span>
+                  <span class="location"
+                    >Mots cles, latino-americain, Bar, Caribbean</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="area-card-content">
+            <!-- Slider -->
+            <div class="area-card-slider">
+              <div class="swiper cardSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/images/card-area-1.jpeg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/card-area-2.jpeg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="area-card-description">
+              <div class="area-card-header">
+                <img
+                  src="./assets/images/mojito-logo.png"
+                  alt="Mojito"
+                  class="area-card-logo"
+                />
+                <div class="area-card-header-title">
+                  <p class="area-card-title">Havana</p>
+                  <h2 class="area-card-subtitle">Mojito Mojito</h2>
+                </div>
+              </div>
+              <div class="area-card-body">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, minima molestias suscipit nihil facilis quos
+                  officiis omnis hic ut rerum voluptates, ullam vitae placeat
+                  porro quasi earum eos aperiam necessitatibus quae accusamus.
+                </p>
+              </div>
+              <div class="area-card-footer">
+                <div class="area-card-footer-content">
+                  <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                  <span class="dot">&bull;</span>
+                  <span class="dollar-sign">$$$-$$$$</span>
+                  <span class="dot">&bull;</span>
+                  <span class="location"
+                    >Mots cles, latino-americain, Bar, Caribbean</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="area-card-content">
+            <!-- Slider -->
+            <div class="area-card-slider">
+              <div class="swiper cardSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/images/card-area-1.jpeg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/card-area-2.jpeg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="area-card-description">
+              <div class="area-card-header">
+                <img
+                  src="./assets/images/mojito-logo.png"
+                  alt="Mojito"
+                  class="area-card-logo"
+                />
+                <div class="area-card-header-title">
+                  <p class="area-card-title">Havana</p>
+                  <h2 class="area-card-subtitle">Mojito Mojito</h2>
+                </div>
+              </div>
+              <div class="area-card-body">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, minima molestias suscipit nihil facilis quos
+                  officiis omnis hic ut rerum voluptates, ullam vitae placeat
+                  porro quasi earum eos aperiam necessitatibus quae accusamus.
+                </p>
+              </div>
+              <div class="area-card-footer">
+                <div class="area-card-footer-content">
+                  <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                  <span class="dot">&bull;</span>
+                  <span class="dollar-sign">$$$-$$$$</span>
+                  <span class="dot">&bull;</span>
+                  <span class="location"
+                    >Mots cles, latino-americain, Bar, Caribbean</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-card">En voir plus</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="main-container">
+        <div class="footer-banner" id="entreprende">
+          <div class="footer-banner-flex">
+            <div class="footer-banner-item">
+              <h2>
+                Des partenaires <br />
+                de partout, <br />
+                a portée
+                <span class="footer-banner-sp-text">de clic.</span>
+              </h2>
+            </div>
+            <div class="footer-banner-ent">
+              <div class="footer-banner-ent-content">
+                <h2>Entreprenuers</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Soluta non accusantium atque natus expedita, aut perspiciatis.
+                </p>
+                <button class="btn">Apprenez-en plus</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="footer-nav">
+          <div class="footer-menu">
+            <h4>Planifier</h4>
+            <a href="#" class="footer-link-btn"
+              >Regions <i class="fas fa-plus"></i
+            ></a>
+            <a href="#" class="footer-link-btn">
+              Services / Experiences <i class="fas fa-plus"></i
+            ></a>
+            <a href="#" class="footer-link-btn">Assistance de voyage</a>
+          </div>
+          <div class="footer-menu">
+            <h4>Decouvrir</h4>
+            <a href="#" class="footer-link">Recommendations</a>
+            <a href="#" class="footer-link">Nouvellas</a>
+            <a href="#" class="footer-link">On parle de nous</a>
+            <a href="#" class="footer-link">Temoignages</a>
+          </div>
+          <div class="footer-menu">
+            <h4>Affairs</h4>
+            <a href="#" class="footer-link">Donec sed</a>
+            <a href="#" class="footer-link">Odio dui</a>
+            <a href="#" class="footer-link">Morbi leo risus</a>
+            <a href="#" class="footer-link">Porta ac consectetur</a>
+          </div>
+          <div class="footer-menu">
+            <h4>Informations</h4>
+            <a href="#" class="footer-link">man compte</a>
+            <a href="#" class="footer-link">A propos de</a>
+            <a href="#" class="footer-link">Contactez-nous</a>
+          </div>
+        </nav>
+
+        <div class="footer-text">
+          <div class="footer-text-item">
+            <a href="#" class="logo"
+              ><img src="./assets/images/logo-placeholder.png" alt="Logo"
+            /></a>
+          </div>
+          <div class="footer-text-cp">
+            <p>&copy; Condidentialite</p>
+            <div class="page-links">
+              <a href="#">Conditions d'utilisation</a>
+              <a href="#">Condidentialite</a>
+              <a href="#">Plan de site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Script -->
+    <script src="./script/app.js"></script>
+  </body>
+</html>
