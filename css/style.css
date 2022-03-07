@@ -1315,10 +1315,11 @@ a {
 }
 
 .restaurant-main {
-  margin-top: 5rem;
+  margin-top: 7rem;
   display: flex;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 3.5rem;
+  padding-bottom: 30rem;
 }
 
 .restaurant-main-left {
@@ -1437,6 +1438,327 @@ input[type='date']::-webkit-calendar-picker-indicator {
   height: 1.5px;
   background-color: #1a3775;
   margin-top: 0.5rem;
+}
+
+/* Right-Side */
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.restaurant-description {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid #1a3775;
+}
+
+.restaurant-description-info {
+  width: 50%;
+}
+
+.restaurant-description-contact {
+  flex: 1;
+  margin-left: 3.5rem;
+}
+
+.restaurant-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.restaurant-contact-text > i {
+  padding-left: 0.5rem;
+  color: #f88e2b;
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+.restaurant-description-info > a {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.restaurant-description-info > a i {
+  font-size: 1.5rem;
+}
+
+/* Offer-Section */
+.offer {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #1a3775;
+}
+
+.offer-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a3775;
+}
+
+.offer-content {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.offer-item {
+  flex: 1 1 32%;
+}
+
+/* Evaluation-Section */
+.evaluation {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #1a3775;
+}
+
+.evaluation-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.evaluation-item,
+.avis-item {
+  width: 48%;
+}
+
+.evaluation-title,
+.avis-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.evaluation-title h2,
+.avis-title h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #1a3775;
+  line-height: 1.2;
+}
+
+.evaluation-rate,
+.avis-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.evaluation-rate > i {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #f88e2b;
+  padding-right: 0.5rem;
+}
+
+.evaluation-data,
+.avis-data {
+  margin-top: 2.5rem;
+}
+
+.evaluation-data-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.avis-link {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.avis-link > i {
+  font-size: 1.5rem;
+}
+
+/* Time-Section */
+.time {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #1a3775;
+}
+
+.time > h2 {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1a3775;
+}
+
+.time-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.time-data {
+  width: 50%;
+}
+
+/* Destination-Section */
+
+.destination {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #1a3775;
+}
+
+.destination > h2 {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1a3775;
+}
+
+.destination > img {
+  display: block;
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+  margin: 1.5rem 0;
+}
+
+/* Proximity-Section */
+.proximity {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #1a3775;
+}
+
+.proximity > h2 {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1a3775;
+  margin-bottom: 1.5rem;
+}
+
+/* Autres-Section */
+.autres-info {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #1a3775;
+}
+
+.autres-info > h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a3775;
+  margin-bottom: 1.5rem;
+}
+
+/* NTK-Section */
+.ntk {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #1a3775;
+}
+
+.ntk > h2 {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1a3775;
+}
+
+.ntk-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.ntk-data {
+  width: 50%;
+}
+
+.ntk-link {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.ntk-link > i {
+  font-size: 1.5rem;
+}
+
+/* FAQ-Section */
+
+.faq {
+  padding: 3.5rem 0;
+}
+
+.faq > h2 {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #1a3775;
+}
+
+.accordion {
+  margin-top: 1.5rem;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1.2rem 0;
+  color: #1a3775;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.accordion button .accordion-title {
+  padding: 0.8rem 1.2rem 0.8rem 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+
+.accordion button[aria-expanded='true'] .icon-accordion {
+  transform: rotate(180deg);
+}
+
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+  font-size: 1.6rem;
+  color: #777777;
+  padding-left: 3.5rem;
+  width: 85%;
+  padding-bottom: 0.85rem;
 }
 
 /* Responsive Styles Media Queries */
