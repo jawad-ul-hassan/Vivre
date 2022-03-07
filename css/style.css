@@ -1179,6 +1179,266 @@ a {
   background-color: #fff;
 }
 
+/* -------------------------Restaurant-Page-------------------------------- */
+.breadcrumb {
+  background-color: #f88e2b;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.breadcrumb-content {
+  margin-left: 16.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.breadcrumb-link {
+  font-weight: 600;
+}
+
+.breadcrumb-icon {
+  opacity: 0.8;
+  font-size: 1.4rem;
+}
+
+.restaurant-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 0 1.5rem 0;
+}
+
+.restaurant-header-item {
+  margin-top: -8rem;
+  margin-left: 2.5rem;
+}
+
+.restaurant-header-item > img {
+  display: block;
+  width: 12rem;
+  height: 12rem;
+  padding: 1rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1a3775;
+  background-color: #ffffff;
+}
+
+.restaurant-header-footer {
+  flex: 1;
+}
+
+.restaurant-header-footer > h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #1a3775;
+}
+
+.restaurant-header-footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 0.85rem;
+}
+
+.restaurant-header-footer-child {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.share-btn {
+  display: block;
+  background-color: #ffffff;
+  border: 0;
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+}
+
+.restaurant-gallery {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.restaurant-gallery-image {
+  flex: 1 1 33%;
+}
+
+.restaurant-gallery-image > img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.image-btn {
+  position: relative;
+}
+
+.btn-gallery {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 1.5rem;
+  display: block;
+  width: 20rem;
+  text-align: center;
+  font-family: inherit;
+  background-color: #fff;
+  color: inherit;
+  border: 0;
+  border-radius: 5rem;
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.85rem;
+  font-size: 2rem;
+}
+
+.btn-gallery-text {
+  align-self: flex-end;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.restaurant-main {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.restaurant-main-left {
+  flex: 1;
+}
+
+.restaurant-main-right {
+  width: 32rem;
+}
+
+.restaurant-main-right-card {
+  border: 2px solid #1a3775;
+  border-radius: 3.5rem;
+  padding: 2.5rem;
+}
+
+.restaurant-card-form-control {
+  margin-bottom: 1.5rem;
+}
+
+.restaurant-card-form-control > label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.restaurant-card-form-control > select,
+.restaurant-card-form-control > input {
+  display: block;
+  font-family: inherit;
+  padding: 0.85rem 0.5rem;
+  width: 100%;
+  font-size: 1.6rem;
+  color: inherit;
+  border: 0;
+  outline: none;
+}
+
+.restaurant-card-form-control > input {
+  border-bottom: 0;
+  padding: 0.5rem 0;
+}
+
+.restaurant-card-form-control > input[type='date']:focus {
+  border-bottom: 0;
+  color: #1a3775;
+}
+
+.restaurant-card-form-control > input::placeholder {
+  color: #1a3775;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+.select-field,
+.date-field {
+  position: relative;
+}
+
+.input-right-icon {
+  position: absolute;
+  top: 3.1rem;
+  right: 0;
+}
+
+.btn-form {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem;
+  padding-left: 2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 400;
+  background-color: #1a3775;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-form-reserve {
+  margin-top: 1.5rem;
+}
+
+.btn-form-commander {
+  background-color: #f88e2b;
+  margin-top: 1.5rem;
+}
+
+.btn-form-menu {
+  margin-top: 1.5rem;
+  background-color: #ffffff;
+  color: #1a3775;
+  border: 2px solid #1a3775;
+}
+
+.small-line {
+  height: 1.5px;
+  background-color: #1a3775;
+  margin-top: 0.5rem;
+}
+
 /* Responsive Styles Media Queries */
 
 @media (max-width: 992px) {
