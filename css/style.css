@@ -1357,6 +1357,7 @@ a {
   color: inherit;
   border: 0;
   outline: none;
+  background-color: #fff;
 }
 
 .restaurant-card-form-control > input {
