@@ -24,6 +24,12 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: 'Morganite';
+  src: url('../assets/fonts/Morganite/Morganite-Bold.ttf');
+  font-weight: 700;
+}
+
 /* CSS Reset */
 
 *,
@@ -158,6 +164,10 @@ a {
   font-weight: 600;
 }
 
+.hamburger-icon {
+  display: none;
+}
+
 .hamburger-icon > i {
   font-size: 2.5rem;
   cursor: pointer;
@@ -219,25 +229,27 @@ a {
 }
 
 .hero-title h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 7.5rem;
-  letter-spacing: 2.5px;
+  font-family: 'Morganite';
+  font-size: 15rem;
+  letter-spacing: 6px;
+  line-height: 0.8;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .sp-text {
   position: absolute;
-  top: 3rem;
+  top: 7rem;
   left: 0.5rem;
   letter-spacing: 1.5px;
   font-size: 9rem;
+  line-height: 1;
   font-family: 'Gotcha';
 }
 
 .hero-description {
-  margin-top: 10rem;
-  padding-bottom: 10rem;
+  margin-top: 2.5rem;
+  padding-bottom: 5rem;
   font-size: 2.4rem;
   font-weight: 700;
 }
@@ -307,10 +319,11 @@ a {
 }
 
 .region-dropdown {
-  width: 22rem;
+  width: 19rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 1.5rem;
   padding: 0.95rem 2rem;
   color: #fff;
   background-color: #f88e2b;
@@ -376,9 +389,8 @@ a {
 .planifier-item .btn {
   display: block;
   width: 19rem;
-  text-align: left;
-  padding: 1rem 0;
-  padding-left: 2rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
   font-weight: 400;
@@ -443,9 +455,8 @@ a {
 .decouvirer-item .btn {
   display: block;
   width: 19rem;
-  text-align: left;
-  padding: 1rem 0;
-  padding-left: 2rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
   font-weight: 400;
@@ -551,9 +562,8 @@ a {
 .recommendation-item .btn {
   display: block;
   width: 19rem;
-  text-align: left;
-  padding: 1rem 0;
-  padding-left: 2rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
   font-weight: 400;
@@ -616,9 +626,8 @@ a {
 .comprendre-item .btn {
   display: block;
   width: 19rem;
-  text-align: left;
-  padding: 1rem 0;
-  padding-left: 2rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
   font-weight: 400;
@@ -757,9 +766,8 @@ a {
 .footer-banner-ent-content .btn {
   display: block;
   width: 25rem;
-  text-align: left;
-  padding: 1rem 0;
-  padding-left: 2rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
   font-weight: 400;
@@ -873,6 +881,7 @@ a {
   display: block;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
+  color: #ffffff;
 }
 
 .search-bar-menu {
@@ -2027,14 +2036,13 @@ h3 {
     right: 0rem;
   }
 
+  .img-box {
+    top: 5rem;
+  }
+
   .hero-item {
     margin-left: 0;
     padding: 0;
-  }
-
-  .hero-description {
-    margin-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .decouvirer-item {
@@ -2070,6 +2078,10 @@ h3 {
 @media (max-width: 925px) {
   .nav-menu {
     display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
   }
 
   .main-menu {
@@ -2156,12 +2168,31 @@ h3 {
 }
 
 @media (max-width: 835px) {
-  .hero-images {
-    display: none;
+  .img-box {
+    position: relative;
+    width: 45rem;
+    top: 0;
+  }
+
+  .hero-images .hero-circle-1 {
+    position: relative;
+    width: 22rem;
+    height: 22rem;
+    z-index: 5;
+  }
+
+  .hero-images .hero-circle-2 {
+    position: absolute;
+    top: 6rem;
+    right: 7rem;
+    width: 26rem;
+    height: 26rem;
+    margin: 0 auto;
   }
 
   .hero-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -2169,6 +2200,7 @@ h3 {
   .hero-item {
     width: 100%;
     text-align: center;
+    margin-top: 15rem;
   }
 
   .hero {
@@ -2345,7 +2377,27 @@ h3 {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
+  .img-box {
+    position: relative;
+    width: 100%;
+  }
+
+  .hero-images .hero-circle-1 {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    z-index: 5;
+  }
+
+  .hero-images .hero-circle-2 {
+    position: absolute;
+    top: 6rem;
+    right: -8rem;
+    width: 22rem;
+    height: 22rem;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2427,5 +2479,99 @@ h3 {
   .accordion .accordion-content p {
     padding-left: 0;
     width: 100%;
+  }
+
+  .region {
+    padding: 6rem 0;
+  }
+
+  .img-box {
+    top: 1.5rem;
+  }
+
+  .region-title,
+  .region-description,
+  .planifier-title > h2,
+  .planifier-description,
+  .decouvirer-title > h2,
+  .recommendation-line,
+  .recommendation-title > h2,
+  .recommendation-description,
+  .recommendation-card > p,
+  .comprendre-title > h2,
+  .comprendre-description,
+  .articles-card > p,
+  .footer-menu > h4,
+  .footer-link {
+    text-align: center;
+  }
+
+  .recommendation-description {
+    width: 100%;
+  }
+
+  .planifier-item .btn,
+  .decouvirer .btn,
+  .comprendre .btn,
+  .footer-link-btn {
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+
+  .articles {
+    padding-bottom: 10rem;
+  }
+
+  .footer-nav {
+    margin-top: 10rem;
+    gap: 2.5rem;
+  }
+
+  .footer-text-cp > p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-text-item {
+    margin-right: 0;
+  }
+
+  .footer-text {
+    justify-content: center;
+  }
+
+  .page-links {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-text-cp > p {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-images {
+    width: 100%;
+  }
+
+  .img-box {
+    width: 30rem;
+  }
+
+  .hero-images .hero-circle-1 {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    z-index: 5;
+  }
+
+  .hero-images .hero-circle-2 {
+    position: absolute;
+    top: 6rem;
+    right: -2rem;
+    width: 22rem;
+    height: 22rem;
+    margin: 0 auto;
   }
 }
