@@ -388,8 +388,7 @@ a {
 
 .planifier-item .btn {
   display: block;
-  width: 19rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
@@ -454,8 +453,7 @@ a {
 
 .decouvirer-item .btn {
   display: block;
-  width: 19rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
@@ -561,8 +559,7 @@ a {
 
 .recommendation-item .btn {
   display: block;
-  width: 19rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
@@ -625,8 +622,7 @@ a {
 
 .comprendre-item .btn {
   display: block;
-  width: 19rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
@@ -765,8 +761,7 @@ a {
 
 .footer-banner-ent-content .btn {
   display: block;
-  width: 25rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
@@ -1165,10 +1160,7 @@ a {
 
 .btn-card {
   display: block;
-  width: 21rem;
-  text-align: left;
-  padding: 1rem 0;
-  padding-left: 2rem;
+  padding: 1rem 1.5rem;
   font-size: 1.8rem;
   font-family: inherit;
   font-weight: 400;
@@ -1874,8 +1866,7 @@ h3 {
 
 .connexion-item .btn {
   display: block;
-  width: 19rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   font-size: 1.8rem;
   font-family: inherit;
@@ -1974,9 +1965,8 @@ h3 {
 
 .monde-item .btn {
   display: block;
-  width: 19rem;
   text-align: center;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
   font-size: 1.8rem;
   font-family: inherit;
   font-weight: 400;
@@ -2596,7 +2586,9 @@ h3 {
   .comprendre .btn,
   .footer-link-btn,
   .connexion-item .btn,
-  .monde-item .btn {
+  .monde-item .btn,
+  .recommendation-item .btn,
+  .footer-banner-ent-content .btn {
     margin: 0 auto;
     margin-top: 2.5rem;
   }
@@ -2662,6 +2654,10 @@ h3 {
 
   .profitz {
     padding: 6rem 0;
+  }
+
+  .filter-icon-box {
+    display: none;
   }
 }
 
