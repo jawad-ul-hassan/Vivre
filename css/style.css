@@ -2152,6 +2152,9 @@ h3 {
 @media (max-width: 840px) {
   .area-card-description {
     width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0;
   }
 
   .area-card-content {
@@ -2164,6 +2167,12 @@ h3 {
 
   .area-card-footer-content {
     flex-wrap: wrap;
+  }
+
+  .area-card .swiper-slide img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
   }
 }
 
@@ -2417,15 +2426,25 @@ h3 {
   }
 
   .filter-type {
-    width: 25rem;
+    width: 100%;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
+    padding: 1.2rem;
+  }
+
+  #autres-filters-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .dropdown-autres {
+    width: 100%;
   }
 
   .categories {
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
   }
 
@@ -2537,12 +2556,17 @@ h3 {
   }
 
   .footer-text {
+    flex-direction: column;
     justify-content: center;
   }
 
   .page-links {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .page-links > a {
+    margin-right: 0;
   }
 
   .footer-text-cp > p {
