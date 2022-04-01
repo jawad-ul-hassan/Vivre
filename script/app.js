@@ -17,9 +17,13 @@ var registerLoginModal = document.getElementById('registerLogin-Modal');
 
 var loginRegisterBtn = document.getElementById('loginRegister-Btn');
 
-var span = document.getElementsByClassName('close')[0];
+var loginRegisterBtnMob = document.getElementById('loginRegister-BtnMob');
 
 loginRegisterBtn.onclick = function () {
+  registerLoginModal.style.display = 'block';
+};
+
+loginRegisterBtnMob.onclick = function () {
   registerLoginModal.style.display = 'block';
 };
 
