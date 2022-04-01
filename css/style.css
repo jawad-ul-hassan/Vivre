@@ -2810,6 +2810,11 @@ h3 {
   .filter-icon-box {
     display: none;
   }
+
+  .registerLoginmodal-content {
+    margin-top: 0;
+    padding: 0 0.5rem;
+  }
 }
 
 @media (max-width: 450px) {
