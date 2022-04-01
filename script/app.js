@@ -14,22 +14,25 @@ closeMenu.addEventListener('click', () => {
 // Register-Login Modal
 
 var registerLoginModal = document.getElementById('registerLogin-Modal');
-
+var bodyDoc = document.getElementsByTagName('body');
 var loginRegisterBtn = document.getElementById('loginRegister-Btn');
 
 var loginRegisterBtnMob = document.getElementById('loginRegister-BtnMob');
 
 loginRegisterBtn.onclick = function () {
   registerLoginModal.style.display = 'block';
+  bodyDoc[0].classList.toggle('body-overflow');
 };
 
 loginRegisterBtnMob.onclick = function () {
   registerLoginModal.style.display = 'block';
+  bodyDoc[0].classList.toggle('body-overflow');
 };
 
 window.onclick = function (event) {
   if (event.target == registerLoginModal) {
     registerLoginModal.style.display = 'none';
+    bodyDoc[0].classList.remove('body-overflow');
   }
 };
 
