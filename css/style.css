@@ -74,7 +74,7 @@ a {
 
 /* Login-Register-Modal */
 
-.modal {
+.registerLoginmodal {
   display: none;
   position: fixed;
   z-index: 15;
@@ -87,7 +87,7 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
+.registerLoginmodal-content {
   border-radius: 0.5rem;
   background-color: #ffffff;
   max-width: 850px;

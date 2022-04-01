@@ -15,8 +15,8 @@
   </head>
   <body>
     <!-- The Modal -->
-    <div id="registerLogin-Modal" class="modal">
-      <div class="modal-content">
+    <div id="registerLogin-Modal" class="registerLoginmodal">
+      <div class="registerLoginmodal-content">
         <div class="modal-accordion">
           <div class="accordion-item">
             <button
@@ -473,6 +473,8 @@
 
     <!-- Script -->
     <script>
+      const items = document.querySelectorAll('.accordion button .acc-btn');
+
       function toggleAccordion() {
         const itemToggle = this.getAttribute('aria-expanded');
 

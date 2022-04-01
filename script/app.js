@@ -23,10 +23,6 @@ loginRegisterBtn.onclick = function () {
   registerLoginModal.style.display = 'block';
 };
 
-span.onclick = function () {
-  registerLoginModal.style.display = 'none';
-};
-
 window.onclick = function (event) {
   if (event.target == registerLoginModal) {
     registerLoginModal.style.display = 'none';
