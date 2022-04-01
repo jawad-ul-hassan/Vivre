@@ -14,6 +14,87 @@
     <title>Vivre</title>
   </head>
   <body>
+    <!-- The Modal -->
+    <div id="registerLogin-Modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-accordion">
+          <div class="accordion-item">
+            <button
+              class="acc-btn"
+              id="accordion-button-1"
+              aria-expanded="true"
+            >
+              <span class="icon" aria-hidden="true"
+                ><i id="login-icon" class="fas fa-lock"></i
+              ></span>
+              <span class="accordion-title">Login to your Account</span>
+            </button>
+            <form class="accordion-content">
+              <div class="form-control-modal">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required />
+              </div>
+              <div class="form-control-modal">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <div class="form-control-modal">
+                <div class="form-control-flex">
+                  <button class="modal-btn-submit" type="submit">Login</button>
+                  <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="acc-btn"
+              id="accordion-button-2"
+              aria-expanded="false"
+            >
+              <span class="icon" aria-hidden="true"
+                ><i class="fas fa-user"></i
+              ></span>
+              <span class="accordion-title"
+                >New Signup? Register for an Account</span
+              >
+            </button>
+            <form class="accordion-content">
+              <div class="form-control-modal">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-control-modal">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-control-modal">
+                <label for="username">Choose a Username</label>
+                <input type="text" name="username" id="username" required />
+              </div>
+              <div class="form-control-modal">
+                <label for="username">Phone</label>
+                <input type="tel" name="username" id="username" required />
+              </div>
+              <div class="form-control-modal">
+                <label for="password">Choose Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <div class="form-control-modal">
+                <label for="password">Re-Enter Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <div class="form-control-modal">
+                <button class="modal-btn-submit" type="submit">
+                  Register Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Header -->
     <header class="header">
       <div class="main-container">
@@ -27,6 +108,7 @@
               <a href="#decouvirer" class="nav-links">Découvrir</a>
               <a href="#comprendre" class="nav-links">Comprende</a>
               <a href="#entreprende" class="nav-links">Entreprende</a>
+              <button id="loginRegister-Btn">Login/Register</button>
             </div>
             <div class="nav-icons">
               <div class="search-bar">
@@ -389,6 +471,21 @@
     </footer>
 
     <!-- Script -->
+    <script>
+      function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
+
+        for (i = 0; i < items.length; i++) {
+          items[i].setAttribute('aria-expanded', 'false');
+        }
+
+        if (itemToggle == 'false') {
+          this.setAttribute('aria-expanded', 'true');
+        }
+      }
+
+      items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
     <script src="./script/app.js"></script>
   </body>
 </html>
