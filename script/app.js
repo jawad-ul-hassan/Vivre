@@ -1,12 +1,3 @@
-//Slider
-var cardSlider = new Swiper('.cardSlider', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  loop: true,
-});
-
 // Hamburger-Menu
 const mobileMenu = document.querySelector('#hamburger-menu');
 const closeMenu = document.querySelector('#close-menu');
@@ -18,4 +9,13 @@ mobileMenu.addEventListener('click', () => {
 
 closeMenu.addEventListener('click', () => {
   sideMenu.classList.remove('active');
+});
+
+//Slider
+var cardSlider = new Swiper('.cardSlider', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
 });
